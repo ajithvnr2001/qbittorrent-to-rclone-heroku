@@ -1,7 +1,9 @@
-build:
-  api:
-    context: api
-  frontend:
-    context: frontend
-    dockerfile: Dockerfile
-    target: dev
+version: version
+services:
+  worker:
+    build:
+    environment:
+      RCLONE_CONFIG_IN_RAW_URL: $RCLONE_CONFIG_IN_RAW_URL
+      WEBUSER: $WEBUSER 
+      WEBPASSWORD: $WEBPASSWORD
+    
