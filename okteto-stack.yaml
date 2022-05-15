@@ -1,6 +1,6 @@
 services:
   fastapi:
-    image: DOCKERHUBUSERNAME/fastapi-crud:latest
+    image: okteto.dev/fastapi-crud:latest
     build: .
     replicas: 1
     ports:
