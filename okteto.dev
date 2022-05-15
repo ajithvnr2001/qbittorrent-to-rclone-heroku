@@ -1,0 +1,3 @@
+(venv)$ git add okteto-stack.yaml
+(venv)$ git commit -m "Update image repository"
+(venv)$ git push
